@@ -1,0 +1,28 @@
+{
+  "name": "ai-sdk-examples",
+  "type": "module",
+  "private": true,
+  "devDependencies": {
+    "tsx": "^4.19.2",
+    "vitest": "^4.0.17"
+  },
+  "peerDependencies": {
+    "typescript": "^5.9.3"
+  },
+  "scripts": {
+    "example:web-search": "tsx --env-file=.env web-search.ts",
+    "example:web-search:debug": "tsx --env-file=.env web-search.debug.ts",
+    "example:stop-when": "tsx --env-file=.env stop-when.ts",
+    "example:stop-when-tool-call": "tsx --env-file=.env stop-when-tool-call.ts",
+    "example:mcp": "tsx --env-file=.env mcp.ts",
+    "example:eval": "tsx --env-file=.env eval.ts",
+    "test": "vitest run"
+  },
+  "dependencies": {
+    "@ai-sdk/anthropic": "^3.0.12",
+    "@ai-sdk/mcp": "^1.0.7",
+    "@ai-sdk/openai": "^3.0.9",
+    "ai": "^6.0.33",
+    "zod": "^4.3.5"
+  }
+}
